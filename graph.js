@@ -15,6 +15,12 @@ g = new Dygraph(
 		rollPeriod: 10,
 		delimiter: ';',
 		title: 'USGS 05406500 BLACK EARTH CREEK AT BLACK EARTH, WI',
+		ylabel: 'Discharge, cubic feet per second',
+		axes:{
+			x:{
+				axisLabelWidth: 70,
+			}
+		}
 	}
 );
 
