@@ -1,15 +1,19 @@
+// Windows and Linux can't use the same file path, so yeah...
 if (navigator.appVersion.indexOf("Win") !== -1){
-	var file = "https://raw.githubusercontent.com/jameeters/dygraphs-spike/master/test_data2.csv";
+	var data_file = "https://raw.githubusercontent.com/jameeters/dygraphs-spike/master/test_data.csv";
 }
 else{
-	var file = "test_data2.csv";
+	var data_file = "test_data.csv";
 }
+
+
 g = new Dygraph(
 	document.getElementById("graphdiv"),
-	file,
+	data_file,
 	{
 		showRoller: true,
-		rollPeriod: 10
+		rollPeriod: 10,
+		delimiter: ';',
 	}
 );
 
