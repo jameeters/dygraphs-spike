@@ -14,6 +14,7 @@ g = new Dygraph(
 		showRoller: true,
 		rollPeriod: 10,
 		delimiter: ';',
+		title: 'USGS 05406500 BLACK EARTH CREEK AT BLACK EARTH, WI',
 	}
 );
 
