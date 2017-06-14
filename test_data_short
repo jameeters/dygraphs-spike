@@ -1,0 +1,182 @@
+{
+    "declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+    "globalScope": true,
+    "name": "ns1:timeSeriesResponseType",
+    "nil": false,
+    "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+    "typeSubstituted": false,
+    "value": {
+        "queryInfo": {
+            "criteria": {
+                "locationParam": "[ALL:05406500]",
+                "parameter": [],
+                "timeParam": {
+                    "beginDateTime": "2016-06-01T00:00:00.000",
+                    "endDateTime": "2017-05-31T23:59:59.000"
+                },
+                "variableParam": "[00060]"
+            },
+            "note": [
+                {
+                    "title": "filter:sites",
+                    "value": "[ALL:05406500]"
+                },
+                {
+                    "title": "filter:timeRange",
+                    "value": "[mode=RANGE, modifiedSince=null] interval={INTERVAL[2016-06-01T00:00:00.000-04:00/2017-05-31T23:59:59.000Z]}"
+                },
+                {
+                    "title": "filter:methodId",
+                    "value": "methodIds=[ALL]"
+                },
+                {
+                    "title": "requestDT",
+                    "value": "2017-06-09T15:14:40.238Z"
+                },
+                {
+                    "title": "requestId",
+                    "value": "5bcd59d0-4d26-11e7-b198-3440b59d3362"
+                },
+                {
+                    "title": "disclaimer",
+                    "value": "Provisional data are subject to revision. Go to http://waterdata.usgs.gov/nwis/help/?provisional for more information."
+                },
+                {
+                    "title": "server",
+                    "value": "nadww02"
+                }
+            ],
+            "queryURL": "http://nwis.waterservices.usgs.gov/nwis/iv/site=05406500&startDT=2016-06-01&endDT=2017-05-31&parameterCD=00060&format=json"
+        },
+        "timeSeries": [
+            {
+                "name": "USGS:05406500:00060:00000",
+                "sourceInfo": {
+                    "geoLocation": {
+                        "geogLocation": {
+                            "latitude": 43.13416667,
+                            "longitude": -89.7322222,
+                            "srs": "EPSG:4326"
+                        },
+                        "localSiteXY": []
+                    },
+                    "note": [],
+                    "siteCode": [
+                        {
+                            "agencyCode": "USGS",
+                            "network": "NWIS",
+                            "value": "05406500"
+                        }
+                    ],
+                    "siteName": "BLACK EARTH CREEK AT BLACK EARTH, WI",
+                    "siteProperty": [
+                        {
+                            "name": "siteTypeCd",
+                            "value": "ST"
+                        },
+                        {
+                            "name": "hucCd",
+                            "value": "07070005"
+                        },
+                        {
+                            "name": "stateCd",
+                            "value": "55"
+                        },
+                        {
+                            "name": "countyCd",
+                            "value": "55025"
+                        }
+                    ],
+                    "siteType": [],
+                    "timeZoneInfo": {
+                        "daylightSavingsTimeZone": {
+                            "zoneAbbreviation": "CDT",
+                            "zoneOffset": "-05:00"
+                        },
+                        "defaultTimeZone": {
+                            "zoneAbbreviation": "CST",
+                            "zoneOffset": "-06:00"
+                        },
+                        "siteUsesDaylightSavingsTime": true
+                    }
+                },
+                "values": [
+                    {
+                        "censorCode": [],
+                        "method": [
+                            {
+                                "methodDescription": "",
+                                "methodID": 158001
+                            }
+                        ],
+                        "offset": [],
+                        "qualifier": [
+				<deleted>
+                        ],
+                        "qualityControlLevel": [],
+                        "sample": [],
+                        "source": [],
+                        "value": [
+                            {
+                                "dateTime": "2016-06-01T00:00:00.000-05:00",
+                                "qualifiers": [
+                                    "A"
+                                ],
+                                "value": "36"
+                            },
+                                "dateTime": "2017-01-05T22:30:00.000-06:00",
+                                "qualifiers": [
+                                    "P",
+                                    "Ice"
+                                ],
+                                "value": "-999999"
+                            },
+                                "dateTime": "2017-05-31T23:30:00.000-05:00",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "value": "112"
+                            },
+                            {
+                                "dateTime": "2017-05-31T23:45:00.000-05:00",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "value": "107"
+                            }
+                        ]
+                    }
+                ],
+                "variable": {
+                    "noDataValue": -999999.0,
+                    "note": [],
+                    "oid": "45807197",
+                    "options": {
+                        "option": [
+                            {
+                                "name": "Statistic",
+                                "optionCode": "00000"
+                            }
+                        ]
+                    },
+                    "unit": {
+                        "unitCode": "ft3/s"
+                    },
+                    "valueType": "Derived Value",
+                    "variableCode": [
+                        {
+                            "default": true,
+                            "network": "NWIS",
+                            "value": "00060",
+                            "variableID": 45807197,
+                            "vocabulary": "NWIS:UnitValues"
+                        }
+                    ],
+                    "variableDescription": "Discharge, cubic feet per second",
+                    "variableName": "Streamflow, ft&#179;/s",
+                    "variableProperty": []
+                }
+            }
+        ]
+    }
+}
